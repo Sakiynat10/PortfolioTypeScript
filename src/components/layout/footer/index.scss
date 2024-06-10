@@ -1,0 +1,24 @@
+footer{
+    background-color:  rgb(3, 3, 42) ;
+    .footer-content{
+        display: flex;
+        align-items: center;
+        .logo{
+            font-size: 24px;
+            font-family: "Coiny", system-ui;
+            color: greenyellow !important;
+        }
+        .media-contact{
+            a{
+                svg{
+                    font-size: 24px;
+                    color: rgb(196, 77, 34);
+                    transition: 0.5s;
+                    &:hover{
+                        color: orangered;
+                    }
+                }
+            }
+        }
+    }
+}

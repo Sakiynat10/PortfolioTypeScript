@@ -1,0 +1,65 @@
+.ant-statistic-title {
+    font-size: 24px !important;
+  }
+  
+  .dashboard {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .infos {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      @media (min-width: 1240px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    .info-tables{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 40px;
+      .card-salary{
+        position: relative;
+        width: 320px;
+        height: 100px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px 3px gray;
+        padding: 20px;
+        .salary-title{
+          position: absolute;
+          top: 10px;
+          color: gray;
+          font-size: 16px;
+          right: 10px;
+        }
+        .money-card , .money-card-fee{
+          position: absolute;
+          top: -10px;
+          width: 80px;
+          height: 80px;
+          border-radius: 3px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(255, 53, 2);
+          font-size: 40px;
+        }
+        .money-card-fee{
+          background-color: rgb(4, 208, 4);
+        }
+        .statistics{
+          position: absolute;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          right: 10px;
+          bottom: 10px;
+        }
+      }
+  
+    }
+    }
+  }
+
+  

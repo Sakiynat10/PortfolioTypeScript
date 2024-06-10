@@ -1,0 +1,208 @@
+.client-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  .client-card {
+    color: #fff;
+    width: 300px !important;
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    @media(min-width:400px) {
+      width: 350px !important;
+    }
+    @media(min-width:500px) {
+      width: 400px !important;
+    }
+    .client-img {
+      width: 100% !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: orange;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      padding: 20px;
+      img {
+        object-fit: cover;
+        width: 200px !important;
+        height: 200px !important;
+        border-radius: 100%;
+        border: 3px solid black;
+        width: 50%;
+      }
+    }
+    .client-infos {
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+      .portfolio-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        height: 40px;
+        background-color: orange;
+        border: 3px solid orange;
+        width: 100%;
+        transition: 0.5s;
+        &:hover {
+          background-color: #000;
+          border-color: orange;
+          color: orange;
+        }
+      }
+    }
+  }
+  @media (min-width: 656px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .client-card{
+        width: 300px !important;
+    }
+    .client-infos {
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+      p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .portfolio-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        height: 40px;
+        background-color: orange;
+        border: 3px solid orange;
+        width: 100%;
+        transition: 0.5s;
+        &:hover {
+          background-color: #000;
+          border-color: orange;
+          color: orange;
+        }
+      }
+    }
+  }
+  @media(min-width:800px) {
+    .client-card{
+      width: 350px !important;
+    }
+  }
+  @media(min-width:900px) {
+    .client-card{
+      width: 400px !important;
+    }
+  }
+  @media(min-width:1000px) {
+    .client-card{
+      width: 300px !important;
+    }
+  }
+  @media(min-width:1130px) {
+    .client-card{
+      width: 350px !important;
+    }
+  }
+  
+  @media(min-width:1280px) {
+    .client-card{
+      width: 300px !important;
+    }
+  }
+
+  // @media (min-width: 640px) {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-wrap: wrap;
+  //   flex-direction: row;
+  //   .client-card{
+  //       width: 300px !important;
+  //   }
+  //   .client-infos {
+  //     padding: 20px;
+  //     text-align: center;
+  //     width: 100%;
+  //     p {
+  //       overflow: hidden;
+  //       display: -webkit-box;
+  //       -webkit-line-clamp: 1;
+  //       -webkit-box-orient: vertical;
+  //     }
+  //     .portfolio-btn {
+  //       display: flex;
+  //       align-items: center;
+  //       justify-content: center;
+  //       border-radius: 5px;
+  //       height: 40px;
+  //       background-color: orange;
+  //       border: 3px solid orange;
+  //       width: 100%;
+  //       transition: 0.5s;
+  //       &:hover {
+  //         background-color: #000;
+  //         border-color: orange;
+  //         color: orange;
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+.ant-pagination{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &-item{
+        background-color: orange !important;
+        border: 2px solid orange !important;
+        transition: 0.5s;
+        &:hover{
+            background-color: black !important;
+            a{
+                color: orange !important;
+            }
+        }
+    }
+    &-item-active{
+        background-color: orangered !important;
+        border-color: orangered !important;
+        a{
+            color: #fff !important;
+        }
+    }
+    &-prev{
+        background-color: orange !important;
+        border: 2px solid rgba(255, 166, 0, 0.725)  !important;
+        transition: 0.5s;
+        &:hover{
+            background-color: rgba(255, 166, 0, 0.725)  !important;
+            a{
+                color: rgba(255, 166, 0, 0.725)  !important;
+            }
+        }
+    }
+    &-next{
+        background-color: orange !important;
+        border: 2px solid rgba(255, 166, 0, 0.725)  !important;
+        transition: 0.5s;
+        &:hover{
+            background-color: rgba(255, 166, 0, 0.725) !important;
+            fill{
+                color: orange !important;
+            }
+        }
+    }
+    &-disabled{
+        background-color: rgb(153, 110, 30) !important;
+        border-color:  rgb(153, 110, 30) !important;
+    }
+
+}

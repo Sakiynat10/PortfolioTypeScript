@@ -1,0 +1,17 @@
+.warning-user-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+    &__content {
+      padding: 20px;
+      height: 400px;
+      max-width: 600px;
+      background-color: black;
+      color: white;
+    }
+  }
+  

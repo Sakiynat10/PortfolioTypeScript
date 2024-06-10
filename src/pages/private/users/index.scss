@@ -1,0 +1,25 @@
+.photo{
+    .ant-image-img{
+        object-fit: cover;
+        height: 300px !important;
+    }
+    .delete-photo{
+        top: 55%;
+        left: 45%;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-color: red !important;
+        display: none;
+        transition: 0.5s;
+        svg{
+            color: red;
+        }
+    }
+    &:hover{
+        background: black !important;
+        .delete-photo{
+            display: block;
+        }
+    }
+}

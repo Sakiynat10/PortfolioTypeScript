@@ -1,0 +1,13 @@
+.ant-form-item-required{
+    color:  greenyellow !important;
+}
+.ant-btn{
+    background:  greenyellow;
+    border: 2px solid greenyellow !important;
+    transition: 0.5s;
+    &:hover{
+        color:  greenyellow !important;
+        background-color: transparent !important;
+        border: 2px solid greenyellow !important;
+    }
+}

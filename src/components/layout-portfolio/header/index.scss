@@ -1,0 +1,109 @@
+.header{
+    z-index: 11;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #000;
+    box-shadow: 0px 0px 10px rgb(5, 246, 126);
+    .nav{
+        .logo{
+
+                color: rgb(5, 246, 126) !important;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            gap: 20px;
+            li{
+                a.active{
+                    color: green;
+                }
+                a{
+                    display: none;
+                    &:hover{
+                        color: rgb(34, 203, 118) !important;
+                        padding-bottom: 2px;
+                        border-bottom: 2px solid rgb(34, 203, 118);
+                    }
+                }
+                button{
+                    background-color: rgb(2, 255, 129);
+                    border: 3px solid rgb(5, 246, 126) !important;
+                    border-radius: 50px;
+                    height: 40px;
+                    &:hover{
+                        background-color: transparent !important;
+                        border: 3px solid rgb(5, 246, 126) !important;
+                        color: rgb(5, 246, 126) !important;
+                    }
+                }
+            }
+            .menu-icon{
+                color: rgb(5, 246, 126);
+                font-size: 22px;
+                cursor: pointer;
+            }
+        }
+        @media(min-width:700px) {
+            ul{
+                li{
+                    a{
+                        display: inline-block;
+                    }
+                }
+                .menu-icon{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        background-color: rgb(40, 48, 5);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 40%;
+        transition: 0.5s;
+        left: 0;
+        ul{
+            margin-top: auto;
+            margin-bottom: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 80%;
+            li{
+                width: 100%;
+                a{
+                    padding: 10px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    width: 100%;
+                    transition: 0.5s;
+                    background-color: rgb(5, 246, 126);
+                    border: 2px solid rgb(5, 246, 126);
+                    &:hover{
+                        background-color: transparent;
+                        color: rgb(5, 246, 126) !important;
+                    }
+                }
+            }
+        }
+    }
+    .none{
+        left: -100%;
+        transition: 0.5s;
+    }
+    @media(min-width:700px) {
+        .nav-menu{
+            display: none;
+        }
+    }
+}
